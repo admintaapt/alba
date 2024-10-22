@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="#"><img id="logo-header" src="" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="main-image">
+            <div class="hero-content">
+                <h1 id="main-title">Lorem Ipsum dolor</h1>
+                <p id="main-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Mauris pellentesque
+                    volutpat cursus.</p>
+                <button id="button-1">Contáctanos</button>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="content-container">
+                <h2>¿Qué hacemos?</h2>
+                <div class="text-columns">
+                    <div class="column">
+                        <p id="mainSubparagraph">Dolor sit amet, consectetur adipiscing elit. Mauris pellentesque
+                            volutpat cursus. Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Mauris pellentesque volutpat cursus
+                            dolor sit amet, consectetur adipiscing elit. Mauris pellentesque volutpat cursus
+                            dolor sit amet, consectetur adipiscing elit. Mauris pellentesque volutpat cursus
+                            dolor sit amet, consectetur adipiscing elit. Mauris pellentesque volutpat cursus.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        </div>
+        <section class="split-section">
+            <div class="text-content">
+                <h2 id="split-section-title">Lorem Ipsum dolor sit</h2>
+                <p id="split-section-paragraph1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                    pellentesque volutpat cursus.</p>
+                <p id="split-section-paragraph2">Dolor sit amet, consectetur adipiscing elit. Mauris pellentesque
+                    volutpat cursus.</p>
+                <button id="button-2">Escríbenos</button> <!-- ID para el Botón 5 -->
+            </div>
+            <div class="image-content">
+                <img id="split-section-image" src="lambo.png" alt="Descripción de la imagen">
+            </div>
+        </section>
+        <section class="cards-section">
+            <h2>Nuestros servicios</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img id="pexels-thumb1" src="primer-card.png" alt="Descripción de la imagen">
+                    <h3 id="titulo-1">Lorem ipsum</h3>
+                    <p id="subtitulo-1">Dolor sit amet, consectetur adipiscing elit. Mauris pellentesque volutpat
+                        cursus.</p>
+                    <button id="button3">Ver más</button> <!-- ID para el Botón 5 -->
+                </div>
+                <div class="card">
+                    <img id="pexels-thumb2" src="segundo-card.png" alt="Descripción de la imagen">
+                    <h3 id="titulo-2">Lorem ipsum</h3>
+                    <p id="subtitulo-2">Dolor sit amet, consectetur adipiscing elit. Mauris pellentesque volutpat
+                        cursus.</p>
+                    <button id="button4">Ver más</button> <!-- ID para el Botón 5 -->
+                </div>
+                <div class="card">
+                    <img id="pexels-thumb3" src="tercer-card.png" alt="Descripción de la imagen">
+                    <h3 id="titulo-3">Lorem ipsum</h3>
+                    <p id="subtitulo-3">Dolor sit amet, consectetur adipiscing elit. Mauris pellentesque volutpat
+                        cursus.</p>
+                    <button id="button5">Ver más</button> <!-- ID para el Botón 5 -->
+                </div>
+            </div>
+        </section>
+        <section class="slider-section">
+            <div class="slider-wrapper">
+                <div class="thumbnail prev-thumbnail">
+                    <img id="pexels-thumb5" src="pixel2.jpg" alt="Miniatura anterior">
+                </div>
+                <div class="slider">
+                    <div class="slides">
+                        <img id="pexels-thumb5" src="pixel2.jpg" alt="Imagen 1">
+                        <img id="pexels-thumb6" src="pixel1.jpg" alt="Imagen 2">
+                        <img id="pexels-thumb7" src="pixel3.jpg" alt="Imagen 3">
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+                <div class="thumbnail next-thumbnail">
+                    <img id="pexels-thumb7" src="pixel3.jpg" alt="Miniatura siguiente">
+                </div>
+            </div>
+        </section>
+
+        <section class="review-section">
+            <h2>Testimonios</h2>
+            <p>Esto dicen nuestros clientes de nosotros.</p>
+            <div class="review-slider">
+                <button class="prev-review" onclick="prevReview()">&#10094;</button>
+                <div class="review-content">
+                    <div class="review active">
+                        <img src="testiomonio1.jpg" alt="Imagen de reseña">
+                        <div class="review-text">
+                            <h3>Testimonio 1</h3>
+                            <p id="testimonial-1">Dolor sit amet, consectetur adipiscing elit. Mauris pellentesque
+                                volutpat cursus. Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque volutpat cursus.
+                            </p>
+                            <div class="rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9734;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <img src="testiomonio3.jpg" alt="Imagen de reseña">
+                        <div class="review-text">
+                            <h3>Testimonio 2</h3>
+                            <p id="testimonial-2">Dolor sit amet, consectetur adipiscing elit. Mauris pellentesque
+                                volutpat cursus. Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque volutpat cursus.
+                            </p>
+                            <div class="rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9734;</span>
+                                <span class="star">&#9734;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <img src="testiomonio2.jpg" alt="Imagen de reseña">
+                        <div class="review-text">
+                            <h3>Testimonio 3
+                            </h3>
+                            <p id="testimonial-3">Dolor sit amet, consectetur adipiscing elit. Mauris pellentesque
+                                volutpat cursus. Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque volutpat cursus.
+                            </p>
+                            <div class="rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="next-review" onclick="nextReview()">&#10095;</button>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img id="logo-footer" src="" alt="">
+                </div>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><img src="face.png" alt="" srcset=""></a>
+                    <a href="#" aria-label="Instagram"><img src="ins.png" alt="" srcset=""></a>
+                    <a href="#" aria-label="LinkedIn"><img src="link.png" alt="" srcset=""></a>
+                </div>
+                <div class="footer-link">
+                    <a href="#">Lorem</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
