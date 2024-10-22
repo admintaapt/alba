@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Encabezado y navegación */
+header {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 1rem 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Logo */
+.logo a {
+    font-size: 1.5rem;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Sección principal */
+.hero {
+    background-image: url('./apple.png');
+    background-size: cover;
+    background-position: center;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilos para la sección de contenido */
+.content-section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.content-container {
+    margin: 0 auto;
+}
+
+.content-section h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #178995;
+}
+
+.content-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.content-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Estilos para la imagen en el centro */
+.image-grid {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0rem;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para las columnas de texto */
+.text-columns {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin-bottom: 0rem;
+}
+
+.column {
+    flex: 1;
+    max-width: 45%;
+}
+
+/* Botón en la sección de contenido */
+.content-section button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Estilos para la sección dividida */
+.split-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    gap: 2rem;
+    background-color: #178995;
+    color: white;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.text-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-content p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.text-content button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Estilos para la imagen */
+.image-content {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilos para la línea divisoria */
+.divider {
+    width: 90%;
+    /* Ajusta esto para que coincida con el ancho de la imagen */
+    margin: 2rem auto;
+    /* Centra la línea horizontalmente */
+    border-top: 1px solid #000;
+    /* Estilo de la línea */
+    opacity: 0.5;
+    /* Ajusta la opacidad si lo deseas */
+}
+
+/* Estilos para la sección de tarjetas */
+.cards-section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.cards-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #178995;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #178995;
+    text-align: center;
+    width: 30%;
+    max-width: 350px;
+    border: 1px solid;
+    border-radius: 5px 5px 0px 0px;
+    /* padding: 0.4rem; */
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 5px 4px 11px rgba(0, 0, 0, 0.5); /* sombra negra */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+    border-radius: 5px 5px 5px 5px;
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: auto;
+}
+
+.card:hover img {
+    transform: scale(1.2);
+    /* Ajusta el zoom según lo necesites */
+    overflow: auto;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.card button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Contenedor principal del slider y miniaturas */
+.slider-section {
+    background-color: #178995;
+    padding: 1rem;
+}
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    max-width: 80%;
+    margin: 50px auto;
+}
+
+.slider-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+    margin-top: 25px;
+}
+
+.slider-section p {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* Estilos para las miniaturas */
+.thumbnail {
+    flex: 0 0 15%;
+    max-width: 15%;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.thumbnail img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
+
+/* Estilos para el slider */
+.slider {
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 70%;
+    max-width: 50%;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Botones de navegación */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    border: none;
+    font-size: 5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+    background: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Estilos para la sección de reseñas */
+.review-section {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.review-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #178995;
+}
+
+.review-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+/* Estilos para el slider de reseñas */
+.review-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.review-content {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.review {
+    display: none;
+    /* Ocultas por defecto */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    /* Transición de desvanecimiento */
+    gap: 1rem;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Cuando una reseña está activa, la mostramos con la transición */
+.review.active {
+    display: flex;
+    /* O el estilo que necesites */
+    opacity: 1;
+}
+
+.review img {
+    width: 140px;
+}
+
+.review-text {
+    flex: 1;
+}
+
+.review-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.review-text h4 {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.review-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para las estrellas de calificación */
+.rating {
+    color: #FFD700;
+    font-size: 2rem;
+}
+
+.rating .star {
+    margin-right: 0.2rem;
+}
+
+/* Botones para el slider */
+.prev-review,
+.next-review {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #178995;
+    border: none;
+    font-size: 4rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.5rem;
+    z-index: 1;
+    background: none;
+}
+
+.prev-review {
+    left: 10px;
+}
+
+.next-review {
+    right: 10px;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #178995;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.footer-socials a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+    color: #FFD700;
+}
+
+.footer-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.footer-link a:hover {
+    text-decoration: underline;
+}
+
+.footer img {
+    height: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
